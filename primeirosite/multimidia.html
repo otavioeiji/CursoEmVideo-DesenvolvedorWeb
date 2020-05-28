@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Renault Sandero</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/midia.css"/>
+    
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+	<hgroup>
+	<h1>Sandero</h1>
+	<h2>O carro do ano!!!<h2/>
+    </hgroup>
+    
+    <img id="icone" src="_imagens/multimidia.jpg"/>
+  	<nav id="menu">  
+	<h1>Menu Principal</h1>
+	<ul type="disc">
+		<li onmouseover="mudaFoto('_imagens/home.jpg')" onmouseout="mudaFoto('_imagens/multimidia.jpg')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaFoto('_imagens/especificacoes.jpg')" onmouseout="mudaFoto('_imagens/multimidia.jpg')"><a href="especificacoes.html">Especificações</a></li>
+		<li onmouseover="mudaFoto('_imagens/fotos.jpg')" onmouseout="mudaFoto('_imagens/multimidia.jpg')"><a href="fotos.html">Fotos</a></li>
+		<li onmouseover="mudaFoto('_imagens/multimidia.jpg')" onmouseout="mudaFoto('_imagens/multimidia.jpg')"><a href="multimidia.html">Multimídia</a></li>
+		<li onmouseover="mudaFoto('_imagens/fale-conosco.jpg')" onmouseout="mudaFoto('_imagens/multimidia.jpg')"><a href="fale_conosco.html">Fale conosco</a></li>
+	</ul> 
+	</nav>
+    </header>
+    
+<section id="corpo-full">
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<h3>Sandero > Multimídia</h3>
+				<h1>Galeria de vídeos do Sandero</h1>
+				<h3 class="direita">Atualizado em 08/01/2018</h3>
+			</hgroup>
+		</header>
+	
+	<div id="tv-radio">
+		<audio id="musica" controls="controls">
+			<source src="_midia/Planetshakers%20-%20Dance%20(Instrumental).mp3" type="audio/mpeg"/>
+			<source src="_midia/Planetshakers%20-%20Dance%20(Instrumental).oggvorbis.ogg" type="audio/ogg"/>
+			Desculpe, mas não foi possível carregar o áudio.
+		</audio>
+		<video id="filme" controls="controls">
+			<source src="_midia/Clip%20Renault%20Sandero%20RS%20Autodromo%20de%20Buenos%20Aires.mp4" type="video/mp4"/>
+			<source src="_midia/Clip%20Renault%20Sandero%20RS%20Autodromo%20de%20Buenos%20Aires.webmsd.webm" type="video/webm"/>
+			<source src="_midia/Clip%20Renault%20Sandero%20RS%20Autodromo%20de%20Buenos%20Aires.oggtheora.ogv" type="video/ogv"/>
+			Desculpe, mas não foi possível carregar o vídeo.
+		</video>
+	</div>
+	</article>
+</section>
+
+<footer id="rodape">
+<p>Copyrigth &copy; 2018 - by Otávio Eiji Mitsuzaki</br>
+<a href="https://www.facebook.com/otavio.mitsuzaki" target="_blank">Facebook</a>	
+</p>	
+</footer> 
+</div>     
+</body>
+</html>

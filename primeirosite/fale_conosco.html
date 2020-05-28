@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Renault Sandero</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/form.css"/>
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+	<hgroup>
+	<h1>Sandero</h1>
+	<h2>O carro do ano!!!<h2/>
+    </hgroup>
+    
+    <img id="icone" src="_imagens/fale-conosco.jpg"/>
+  	<nav id="menu">  
+	<h1>Menu Principal</h1>
+	<ul type="disc">
+		<li onmouseover="mudaFoto('_imagens/home.jpg')" onmouseout="mudaFoto('_imagens/fale-conosco.jpg')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaFoto('_imagens/especificacoes.jpg')" onmouseout="mudaFoto('_imagens/fale-conosco.jpg')"><a href="especificacoes.html">Especificações</a></li>
+		<li onmouseover="mudaFoto('_imagens/fotos.jpg')" onmouseout="mudaFoto('_imagens/fale-conosco.jpg')"><a href="fotos.html">Fotos</a></li>
+		<li onmouseover="mudaFoto('_imagens/multimidia.jpg')" onmouseout="mudaFoto('_imagens/fale-conosco.jpg')"><a href="multimidia.html">Multimídia</a></li>
+		<li onmouseover="mudaFoto('_imagens/fale-conosco.jpg')" onmouseout="mudaFoto('_imagens/fale-conosco.jpg')"><a href="fale_conosco.html">Fale conosco</a></li>
+	</ul> 
+	</nav>
+    </header>
+    
+<section id="corpo-full">
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<h3>Sandero > Fale conosco</h3>
+				<h1>Formulário de contato.</h1>
+				<h3 class="direita">Atualizado em 09/01/2018</h3>
+			</hgroup>
+		</header>
+		
+		<form method="post" id="fContato" action="mailto: otavioem@gmail.com">
+		<fieldset id="usuario"><legend>Identificação do Usuário</legend>
+			<p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+			<p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="10" maxlength="8" placeholder="8 dígitos"/></p>
+			<p><label for="cMail">E-mail:</label><input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
+			<fieldset id="sexo"><legend>Sexo</legend>
+				<input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label><br>
+				<input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+				</fieldset>
+			<p>Data de Nascimento: <input type="date" name="tNasc" id="cNasc"/></p>
+		</fieldset>
+			
+		<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+			<p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="23" maxlength="80" placeholder="Rua, Av., Travessa."/></p>
+			<p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+			<p><label for="cCid">Cidade:<input type="text" name="tCidade" id="cCidade" size="30" maxlength="80" list="cidades"/></p>
+			<datalist id="cidades">
+				<option value="São Paulo"></option>
+				<option value="Osasco"></option>
+				<option value="Suzano"></option>
+				<option value="Carapicuíba"></option>
+			</datalist>
+			<p><label for="cEst">Estado:</label>
+			<select name="tEst" id="cEst">
+				<option value="SP"selected>São Paulo</option>
+				<option value="RJ">Rio de Janeiro</option>
+			</select>
+			</p>
+		</fieldset>
+			
+		<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+			<p><label for="cUrg">Grau de Urgência: Mín</label><input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1"/>Máx</p>
+			<p><label for="cMsg">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="33" rows="5" placeholder="Deixe aqui sua mensagem."></textarea></p>
+		</fieldset>
+			
+		<fieldset id="pedido"><legend>Quero um Sandero</legend>
+			<p><input type="checkbox" name="tPed" id="cPed" checked/><label for="cPed">Gostaria de adquirir um Sandero quando disponível</label>
+			<p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor" value="#0000FF"/></p>
+		</fieldset>
+		<input type="submit" value="Enviar"/>	
+		</form>
+				
+	</article>
+</section>
+
+<footer id="rodape">
+<p>Copyrigth &copy; 2018 - by Otávio Eiji Mitsuzaki</br>
+<a href="https://www.facebook.com/otavio.mitsuzaki" target="_blank">Facebook</a>	
+</p>	
+</footer> 
+</div>     
+</body>
+</html>

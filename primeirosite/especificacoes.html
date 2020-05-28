@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Renault Sandero</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/specs.css"/>
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+	<hgroup>
+	<h1>Sandero</h1>
+	<h2>O carro do ano!!!<h2/>
+    </hgroup>
+    
+    <img id="icone" src="_imagens/especificacoes.jpg.png"/>
+  	<nav id="menu">  
+	<h1>Menu Principal</h1>
+	<ul type="disc">
+		<li onmouseover="mudaFoto('_imagens/home.jpg')" onmouseout="mudaFoto('_imagens/especificacoes.jpg')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaFoto('_imagens/especificacoes.jpg')" onmouseout="mudaFoto('_imagens/especificacoes.jpg')"><a href="especificacoes.html">Especificações</a></li>
+		<li onmouseover="mudaFoto('_imagens/fotos.jpg')" onmouseout="mudaFoto('_imagens/especificacoes.jpg')"><a href="fotos.html">Fotos</a></li>
+		<li onmouseover="mudaFoto('_imagens/multimidia.jpg')" onmouseout="mudaFoto('_imagens/especificacoes.jpg')"><a href="multimidia.html">Multimídia</a></li>
+		<li onmouseover="mudaFoto('_imagens/fale-conosco.jpg')" onmouseout="mudaFoto('_imagens/especificacoes.jpg')"><a href="fale_conosco.html">Fale conosco</a></li>
+	</ul> 
+	</nav>
+    </header>
+
+<section id="corpo-full">
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<h3>Sandero > Especificações</h3>
+				<h1>Raio-X do Sandero</h1>
+				<h3 class="direita">Atualizado em 08/01/2018</h3>
+			</hgroup>
+		</header>
+
+		<section id="conteudo">
+			<img src="_imagens/esqueleto.png" usemap="#meumapa"/>
+			<map name="meumapa">
+			<area shape="rect" coords="408,52,441,81" href="sandero.html#lanternas" target="janela"/>
+			<area shape="roda" coords="55,106,115,169" href="sandero.html#rodas" target="janela"/>
+			<area shape="retrovisor" coords="147,45,165,62" href="sandero.html#retrovisores" target="janela"/>
+			<area shape="sensor" coords="434,94,448,106" href="sandero.html#sensores" target="janela"/>
+			</map>
+			<iframe src="sandero.html" name="janela" id="frame-spec"></iframe>
+	</article>
+</section>
+
+<footer id="rodape">
+<p>Copyrigth &copy; 2018 - by Otávio Eiji Mitsuzaki</br>
+<a href="https://www.facebook.com/otavio.mitsuzaki" target="_blank">Facebook</a>	
+</p>	
+</footer> 
+</div>     
+</body>
+</html>

@@ -9,6 +9,6 @@ Primeiro Site que desenvolvi através do Curso em Video pelo excelente Prof. Gus
 
 ### Assistir ao vídeo do curso:
 
-[![Curso de HTML5](http://img.youtube.com/vi/epDCjksKMok/0.jpg)](http://www.youtube.com/watch?v=epDCjksKMok "Vídeo do curso.")
+[![Curso de HTML5](http://img.youtube.com/vi/epDCjksKMok/0.jpg)](http://www.youtube.com/watch?v=epDCjksKMok "Curso em Video.")
 
 
